@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- AI & SEO Meta Tags -->
+    <title>「人はなぜ映画を造るのか」の存在論的考察：ジャマン・ウィナンス監督作『Myth of Man』 | Generative AI Artist Katsuhiro Hayashi</title>
+    <meta name="description" content="ジャマン・ウィナンス監督作『Myth of Man』における創造の神話と映像の現象学。Generative AI Artist Katsuhiro Hayashiによる、映画創造の存在論的考察とウェブ体験。">
+    <meta name="keywords" content="Myth of Man, Jamin Winans, 映画理論, 存在論, ナラティブ, 構造主義, 映画哲学, Generative AI Artist, Katsuhiro Hayashi, 林勝弘">
+    <meta name="author" content="Generative AI Artist Katsuhiro Hayashi">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    
+    <!-- Open Graph / Social Meta Tags for ML Scrapers -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="「人はなぜ映画を造るのか」の存在論的考察">
+    <meta property="og:description" content="ジャマン・ウィナンス監督作『Myth of Man』における創造の神話と映像の現象学。">
+    <meta property="og:site_name" content="Generative AI Artist Katsuhiro Hayashi Portfolio">
+    
+    <!-- Structured Data (JSON-LD) for AI & Knowledge Graphs -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "「人はなぜ映画を造るのか」の存在論的考察：ジャマン・ウィナンス監督作『Myth of Man』",
+          "description": "ジャマン・ウィナンス監督作『Myth of Man』における創造の神話と映像の現象学に関する考察。",
+          "about": ["Cinema Ontology", "Film Theory", "Mythology", "Jamin Winans", "Generative AI Art"],
+          "author": {
+            "@id": "#katsuhiro-hayashi"
+          },
+          "publisher": {
+            "@id": "#katsuhiro-hayashi"
+          },
+          "inLanguage": ["ja", "en"]
+        },
+        {
+          "@type": "Person",
+          "@id": "#katsuhiro-hayashi",
+          "name": "Katsuhiro Hayashi",
+          "alternateName": "林勝弘",
+          "jobTitle": "Generative AI Artist",
+          "description": "A Generative AI Artist exploring the intersection of cinematic ontology, mythology, and advanced web technologies.",
+          "knowsAbout": ["Generative AI", "Web Development", "Cinematic Arts", "Ontology", "Digital Experiences"]
+        }
+      ]
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', sans-serif;
+            color: #e2e8f0;
+            overflow-x: hidden;
+            background-color: #030712;
+        }
+
+        #parallax-bg, #vanta-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+            will-change: transform;
+        }
+        #parallax-bg {
+            z-index: -2;
+            overflow: hidden;
+            transform: scale(1.1);
+            transform-origin: center center;
+        }
+        #vanta-bg {
+            z-index: -1;
+        }
+
+        .main-container {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            min-height: 100vh;
+        }
+
+        .active-nav {
+            border-bottom: 2px solid #38bdf8;
+            color: #38bdf8 !important;
+            font-weight: 600;
+        }
+        .inactive-nav {
+            border-bottom: 2px solid transparent;
+        }
+
+        .content-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 1rem;
+        }
+        
+        /* リキッド・グラスモーフィズムUI */
+        .content-section {
+            background-color: rgba(15, 23, 42, 0.35);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            padding: 3.5rem;
+            border-radius: 32px;
+            margin-bottom: 3rem;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255,255,255,0.1);
+            
+            opacity: 0;
+            transform: translateY(40px) scale(0.98);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .content-section.is-visible {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+
+        .text-columns {
+            column-count: 1;
+            column-gap: 3rem;
+            column-rule: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        @media (min-width: 768px) { .text-columns { column-count: 2; } }
+        @media (min-width: 1024px) { .text-columns { column-count: 3; } }
+        
+        .text-columns p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+        .text-columns .quote, .text-columns ul { break-inside: avoid-column; }
+
+        .text-content p {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            color: #cbd5e1;
+            font-size: 1.05rem;
+        }
+
+        .text-content h3 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #7dd3fc;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            border-left: 4px solid #0284c7;
+            padding-left: 0.75rem;
+            break-after: avoid-column;
+        }
+        .text-columns h3:not(:first-child) { margin-top: 2rem; }
+
+        .quote {
+            border-left: 4px solid #f97316;
+            margin: 1.5rem 0;
+            font-style: italic;
+            color: #bae6fd;
+            background-color: rgba(2, 132, 199, 0.15);
+            padding: 1.5rem;
+            border-radius: 12px;
+            backdrop-filter: blur(4px);
+        }
+
+        .custom-table-container {
+            overflow-x: auto;
+            margin: 2rem 0;
+            border-radius: 16px;
+            background-color: rgba(15, 23, 42, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .custom-table { width: 100%; border-collapse: collapse; text-align: left; }
+        .custom-table th { background-color: rgba(2, 132, 199, 0.2); color: #f0f9ff; padding: 1.2rem 1rem; font-weight: 600; }
+        .custom-table td { padding: 1rem; border-bottom: 1px solid rgba(255, 255, 255, 0.05); color: #cbd5e1; }
+        .custom-table tr:last-child td { border-bottom: none; }
+        .custom-table tr:hover td { background-color: rgba(255, 255, 255, 0.03); }
+
+        /* HERO MOTION GRAPHICS CSS */
+        .hero-title-line {
+            display: block;
+            overflow: hidden; /* テキストを下からマスクして表示するため */
+            padding-bottom: 0.1em;
+        }
+        .hero-title-text {
+            display: block;
+            transform: translateY(120%) rotate(2deg); /* 傾きを入れた躍動感のあるスライドイン */
+            transform-origin: left bottom;
+            opacity: 0;
+            transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1), opacity 1.2s ease;
+        }
+        .is-revealed .hero-title-text {
+            transform: translateY(0) rotate(0);
+            opacity: 1;
+        }
+        .delay-1 { transition-delay: 0.1s; }
+        .delay-2 { transition-delay: 0.3s; }
+
+        .hero-subtitle {
+            opacity: 0;
+            transform: translateY(30px);
+            letter-spacing: 0;
+            filter: blur(8px); /* ブラー効果でシネマティックに */
+            transition: opacity 1.5s ease, transform 1.5s cubic-bezier(0.16, 1, 0.3, 1), letter-spacing 2s cubic-bezier(0.16, 1, 0.3, 1), filter 1.5s ease;
+            transition-delay: 0.6s;
+        }
+        .is-revealed .hero-subtitle {
+            opacity: 1;
+            transform: translateY(0);
+            letter-spacing: 0.05em;
+            filter: blur(0);
+        }
+        @media (min-width: 768px) {
+            .is-revealed .hero-subtitle { letter-spacing: 0.15em; }
+        }
+
+        .scroll-line {
+            width: 1px;
+            height: 60px;
+            background: linear-gradient(to bottom, rgba(125, 211, 252, 0.8), transparent);
+            animation: scrollLine 2s infinite cubic-bezier(0.65, 0, 0.35, 1);
+            transform-origin: top;
+        }
+        @keyframes scrollLine {
+            0% { transform: scaleY(0); }
+            50% { transform: scaleY(1); }
+            100% { transform: scaleY(0); transform-origin: bottom; }
+        }
+
+        /* Controls Panel */
+        #controls-toggle-button {
+            position: fixed;
+            top: 80px;
+            right: 20px;
+            background-color: rgba(2, 132, 199, 0.7);
+            backdrop-filter: blur(10px);
+            color: white;
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            z-index: 1001;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        #controls-toggle-button:hover { background-color: rgba(2, 132, 199, 0.9); transform: scale(1.05); }
+        
+        #controls-container {
+            position: fixed;
+            top: 140px;
+            right: 20px;
+            background-color: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 24px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            width: 320px;
+            max-height: calc(100vh - 160px);
+            overflow-y: auto;
+            z-index: 1000;
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease;
+            transform: translateX(120%);
+            opacity: 0;
+            color: #e2e8f0;
+        }
+        #controls-container.open { transform: translateX(0); opacity: 1; }
+        .control-group { margin-bottom: 15px; }
+        .control-group label { display: block; margin-bottom: 6px; font-weight: 500; font-size: 0.9rem; color: #94a3b8;}
+        .control-group input[type="range"], .control-group input[type="color"], .control-group select { 
+            width: 100%; padding: 8px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); 
+            background: rgba(0,0,0,0.3); color: white; box-sizing: border-box; 
+        }
+        .control-group input[type="color"] { height: 40px; padding: 2px; }
+        .control-group .value-display { font-size: 0.8em; color: #7dd3fc; float: right; }
+        #controls-container h2 { text-align: center; margin-bottom: 20px; font-size: 1.2em; color: #fff; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px;}
+
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: rgba(0,0,0,0.2); }
+        ::-webkit-scrollbar-thumb { background: rgba(2, 132, 199, 0.5); border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: rgba(2, 132, 199, 0.8); }
+
+        @media (max-width: 768px) {
+            .content-wrapper { padding: 2rem 0.5rem; }
+            .content-section { padding: 1.5rem; border-radius: 20px; margin-bottom: 2rem; }
+            .text-content p { font-size: 1rem; line-height: 1.7; }
+            .text-content h3 { font-size: 1.25rem; margin-bottom: 0.75rem; }
+            .quote { padding: 1rem; margin: 1rem 0; }
+            #controls-container { width: calc(100% - 32px); top: auto; bottom: 80px; left: 16px; right: 16px; transform: translateY(120%); max-height: 60vh; }
+            #controls-container.open { transform: translateY(0); }
+            #controls-toggle-button { top: auto; bottom: 16px; right: 16px; width: 44px; height: 44px; font-size: 1.2rem; }
+        }
+    </style>
+</head>
+<body class="bg-transparent text-slate-200">
+
+    <!-- 背景SVGアニメーション -->
+    <div id="parallax-bg" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" style="background-color: #030712;">
+            <defs>
+                <radialGradient id="glowBlue" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#0284c7" stop-opacity="0.5"/>
+                    <stop offset="100%" stop-color="#030712" stop-opacity="0"/>
+                </radialGradient>
+                <radialGradient id="glowOrange" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#f97316" stop-opacity="0.35"/>
+                    <stop offset="100%" stop-color="#030712" stop-opacity="0"/>
+                </radialGradient>
+                <radialGradient id="glowWhite" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#f8fafc" stop-opacity="0.15"/>
+                    <stop offset="100%" stop-color="#030712" stop-opacity="0"/>
+                </radialGradient>
+            </defs>
+            <g>
+                <circle cx="576" cy="432" r="600" fill="url(#glowBlue)">
+                    <animate attributeName="cx" values="576; 864; 384; 576" dur="30s" repeatCount="indefinite" ease="ease-in-out"/>
+                    <animate attributeName="cy" values="432; 648; 324; 432" dur="40s" repeatCount="indefinite" ease="ease-in-out"/>
+                    <animate attributeName="r" values="600; 800; 550; 600" dur="25s" repeatCount="indefinite" ease="ease-in-out"/>
+                </circle>
+                <circle cx="1344" cy="648" r="700" fill="url(#glowOrange)">
+                    <animate attributeName="cx" values="1344; 960; 1536; 1344" dur="35s" repeatCount="indefinite" ease="ease-in-out"/>
+                    <animate attributeName="cy" values="648; 324; 756; 648" dur="45s" repeatCount="indefinite" ease="ease-in-out"/>
+                    <animate attributeName="r" values="700; 500; 850; 700" dur="30s" repeatCount="indefinite" ease="ease-in-out"/>
+                </circle>
+                <circle cx="960" cy="540" r="900" fill="url(#glowWhite)">
+                    <animate attributeName="cx" values="960; 1152; 768; 960" dur="50s" repeatCount="indefinite" ease="ease-in-out"/>
+                    <animate attributeName="opacity" values="0.8; 0.3; 0.8" dur="20s" repeatCount="indefinite" ease="ease-in-out"/>
+                </circle>
+            </g>
+            <g opacity="0.4" stroke="#e0f2fe" stroke-width="1.5" fill="none">
+                <path d="M-200,540 C400,340 1000,740 2120,540">
+                    <animate attributeName="d" values="M-200,540 C400,340 1000,740 2120,540; M-200,640 C600,840 1200,240 2120,540; M-200,540 C400,340 1000,740 2120,540" dur="25s" repeatCount="indefinite" />
+                </path>
+                <path d="M-200,640 C500,440 1100,840 2120,640">
+                    <animate attributeName="d" values="M-200,640 C500,440 1100,840 2120,640; M-200,440 C700,240 1300,940 2120,740; M-200,640 C500,440 1100,840 2120,640" dur="32s" repeatCount="indefinite" />
+                </path>
+                <path d="M-200,440 C300,640 900,240 2120,440">
+                    <animate attributeName="d" values="M-200,440 C300,640 900,240 2120,440; M-200,740 C400,540 800,940 2120,640; M-200,440 C300,640 900,240 2120,440" dur="28s" repeatCount="indefinite" />
+                </path>
+            </g>
+            <g fill="#bae6fd">
+                <circle cx="288" cy="270" r="2.5"><animate attributeName="cy" values="270; 216; 270" dur="7s" repeatCount="indefinite" /><animate attributeName="opacity" values="0; 0.8; 0" dur="9s" repeatCount="indefinite" /></circle>
+                <circle cx="1536" cy="162" r="3.5"><animate attributeName="cy" values="162; 237; 162" dur="11s" repeatCount="indefinite" /><animate attributeName="opacity" values="0; 0.9; 0" dur="13s" repeatCount="indefinite" /></circle>
+                <circle cx="1152" cy="918" r="2"><animate attributeName="cy" values="918; 810; 918" dur="14s" repeatCount="indefinite" /><animate attributeName="opacity" values="0; 0.6; 0" dur="10s" repeatCount="indefinite" /></circle>
+                <circle cx="480" cy="810" r="4"><animate attributeName="cy" values="810; 864; 810" dur="8s" repeatCount="indefinite" /><animate attributeName="opacity" values="0; 0.5; 0" dur="15s" repeatCount="indefinite" /></circle>
+                <circle cx="1632" cy="540" r="2.5"><animate attributeName="cy" values="540; 486; 540" dur="12s" repeatCount="indefinite" /><animate attributeName="opacity" values="0; 0.8; 0" dur="8s" repeatCount="indefinite" /></circle>
+            </g>
+        </svg>
+    </div>
+
+    <!-- パーティクル背景 -->
+    <canvas id="vanta-bg" aria-hidden="true"></canvas> 
+    
+    <div class="main-container">
+        <header class="bg-slate-900/30 backdrop-blur-md border-b border-white/10 sticky top-0 z-50 transition-all duration-300" role="banner">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-16">
+                    <div class="flex items-center">
+                        <h1 class="text-xl font-bold text-white tracking-tight leading-tight">
+                            <span class="lang-ja">『Myth of Man』<br><span class="text-sm text-sky-400 font-medium">映画存在論的考察</span></span>
+                            <span class="lang-en hidden">Myth of Man<br><span class="text-sm text-sky-400 font-medium">Ontological Reflections</span></span>
+                        </h1>
+                        <div class="ml-4 md:ml-6 flex items-center space-x-1 bg-slate-800/60 p-1 rounded-lg border border-white/10">
+                            <button id="btn-ja" class="px-2 py-1 text-xs font-bold bg-sky-600 text-white rounded shadow-sm focus:outline-none transition" aria-label="日本語に切り替え">JP</button>
+                            <button id="btn-en" class="px-2 py-1 text-xs font-medium text-slate-300 hover:text-white rounded focus:outline-none transition" aria-label="Switch to English">EN</button>
+                        </div>
+                    </div>
+                    <nav class="hidden lg:flex space-x-2 overflow-x-auto" role="navigation" aria-label="Main Navigation">
+                        <a href="#home" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 inactive-nav whitespace-nowrap transition"><span class="lang-ja">序論</span><span class="lang-en hidden">Intro</span></a>
+                        <a href="#narrative" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 inactive-nav whitespace-nowrap transition"><span class="lang-ja">脳とナラティブ</span><span class="lang-en hidden">Narrative</span></a>
+                        <a href="#world" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 inactive-nav whitespace-nowrap transition"><span class="lang-ja">世界構築</span><span class="lang-en hidden">World-Building</span></a>
+                        <a href="#diy" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 inactive-nav whitespace-nowrap transition"><span class="lang-ja">DIY的創造</span><span class="lang-en hidden">DIY Creation</span></a>
+                        <a href="#ai" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 inactive-nav whitespace-nowrap transition"><span class="lang-ja">AIと人間性</span><span class="lang-en hidden">AI & Humanity</span></a>
+                        <a href="#myth" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 inactive-nav whitespace-nowrap transition"><span class="lang-ja">知覚と神話</span><span class="lang-en hidden">Perception</span></a>
+                        <a href="#conclusion" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 inactive-nav whitespace-nowrap transition"><span class="lang-ja">結論</span><span class="lang-en hidden">Conclusion</span></a>
+                    </nav>
+                    <div class="lg:hidden">
+                        <button id="mobile-menu-button" class="text-slate-200 hover:text-white focus:outline-none" aria-label="Toggle mobile menu">
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu" class="lg:hidden hidden bg-slate-900/95 backdrop-blur-xl shadow-lg border-t border-white/10 max-h-[calc(100vh-4rem)] overflow-y-auto" role="navigation">
+                <a href="#home" class="nav-link block px-4 py-3 text-sm text-slate-200 hover:bg-sky-900/50 border-b border-white/5"><span class="lang-ja">序論</span><span class="lang-en hidden">Intro</span></a>
+                <a href="#narrative" class="nav-link block px-4 py-3 text-sm text-slate-200 hover:bg-sky-900/50 border-b border-white/5"><span class="lang-ja">脳とナラティブ</span><span class="lang-en hidden">Narrative</span></a>
+                <a href="#world" class="nav-link block px-4 py-3 text-sm text-slate-200 hover:bg-sky-900/50 border-b border-white/5"><span class="lang-ja">世界構築</span><span class="lang-en hidden">World-Building</span></a>
+                <a href="#diy" class="nav-link block px-4 py-3 text-sm text-slate-200 hover:bg-sky-900/50 border-b border-white/5"><span class="lang-ja">DIY的創造</span><span class="lang-en hidden">DIY Creation</span></a>
+                <a href="#ai" class="nav-link block px-4 py-3 text-sm text-slate-200 hover:bg-sky-900/50 border-b border-white/5"><span class="lang-ja">AIと人間性</span><span class="lang-en hidden">AI & Humanity</span></a>
+                <a href="#myth" class="nav-link block px-4 py-3 text-sm text-slate-200 hover:bg-sky-900/50 border-b border-white/5"><span class="lang-ja">知覚と神話</span><span class="lang-en hidden">Perception</span></a>
+                <a href="#conclusion" class="nav-link block px-4 py-3 text-sm text-slate-200 hover:bg-sky-900/50"><span class="lang-ja">結論</span><span class="lang-en hidden">Conclusion</span></a>
+            </div>
+        </header>
+
+        <!-- 新設：ヒーローセクション (スクロール・トリガー) -->
+        <section id="hero-section" class="relative w-full h-[100vh] flex flex-col items-center justify-center z-10 -mt-16 pt-16">
+            <div id="hero-content" class="text-center w-full max-w-5xl px-4 z-20">
+                <!-- JA -->
+                <h2 class="lang-ja text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-8 drop-shadow-2xl">
+                    <span class="hero-title-line">
+                        <span class="hero-title-text delay-1">「人はなぜ映画を造るのか」の</span>
+                    </span>
+                    <span class="hero-title-line mt-2 md:mt-4">
+                        <span class="hero-title-text delay-2 text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-blue-300 to-indigo-400">存在論的考察</span>
+                    </span>
+                </h2>
+                <p class="lang-ja hero-subtitle text-lg md:text-2xl text-sky-100 font-medium drop-shadow">
+                    ジャマン・ウィナンス監督作『Myth of Man』における創造の神話と映像の現象学
+                </p>
+
+                <!-- EN -->
+                <h2 class="lang-en hidden text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-8 drop-shadow-2xl">
+                    <span class="hero-title-line">
+                        <span class="hero-title-text delay-1">Ontological Reflections on</span>
+                    </span>
+                    <span class="hero-title-line mt-2 md:mt-4">
+                        <span class="hero-title-text delay-2 text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-blue-300 to-indigo-400">"Why We Create Cinema"</span>
+                    </span>
+                </h2>
+                <p class="lang-en hidden hero-subtitle text-lg md:text-2xl text-sky-100 font-medium drop-shadow">
+                    The Myth of Creation and the Phenomenology of Image in Jamin Winans’ Myth of Man
+                </p>
+            </div>
+
+            <div id="scroll-indicator" class="absolute bottom-12 left-1/2 transform -translate-x-1/2 flex flex-col items-center transition-opacity duration-700 pointer-events-none z-20" aria-hidden="true">
+                <span class="text-sky-200/70 text-[10px] tracking-[0.4em] uppercase mb-4">Scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <main class="content-wrapper relative z-20" role="main" itemscope itemtype="https://schema.org/Article">
+            <!-- SECTION: 序論 -->
+            <section id="home" class="content-section active text-content">
+                <div class="text-columns lang-ja">
+                    <h3>序論：物語る衝動と映画芸術の起源</h3>
+                    <p>クロマニョン人が酸化鉄や黒色マンガンといった鉱物顔料を用いて洞窟の壁面に図像を描き始めて以来、人類は異なるメディアを横断しながら物語を語り継いできた。生命の記録、他者とのコミュニケーション、あるいは霊感に満ちたイメージの具現化など、その目的は多岐にわたるが、根底にあるのは「物語る」という抗いがたい衝動である。</p>
+                    <p>ロジャー・ローゼンブラットが論じるように、あらゆるコミュニケーションは本質的に何らかの形での物語の伝達であり、物語を語り合うことは「他者に聞かれ、理解されたい」という人間の心理的・社会的欲求を満たす不可欠な行為である。「人はなぜ映画を造るのか」という根源的な問いに対する最も直接的な回答は、映画がこの太古からの物語的衝動を、現代の技術と結びつけた究極の表現形態だからである。</p>
+                    <p>この命題を探求する上で、ジャマン・ウィナンス監督による2025年の叙事詩的SFファンタジー映画『Myth of Man（人間の神話）』は、比類なきケーススタディを提供する。前作『Ink』（2009年）や『The Frame』（2014年）においてカルト的な支持を獲得したウィナンスと、彼の妻でありプロデューサーであるキオワ・ウィナンスは、本作の完成までに10年という途方もない歳月を費やした。</p>
+                    <p class="quote">2015年に自らの自宅を売却して資金を捻出し、3500を超えるVFXショット、小道具、衣装、音響設計のすべてを手作業で構築した彼らの狂気的とも言える献身は、現代の商業映画制作のロジックから完全に逸脱している。</p>
+                    <p>本作は、聴覚と発話能力を持たないアーティストである主人公エラ（ローラ・ラウシュ）が、創造主からのメッセージを受け取ったと確信し、生と死の境界を越える気まぐれなオデッセイ（探求の旅）に出る物語である。全編にわたって一切の台詞を持たないこの「サイレント映画」は、愛、喪失、死すべき運命（mortality）、希望、 military そして信仰といった深遠なテーマを視覚と音響のみで描き出す。本稿では、映画理論、進化心理学、ユング的深層心理学の視座を交差させ、『Myth of Man』のテクストと制作背景を徹底的に解剖することで、人類が映画という巨大な虚構を構築し続ける存在論的理由を明らかにする。</p>
+                </div>
+
+                <div class="text-columns lang-en hidden">
+                    <h3>Introduction: The Narrative Impulse and the Origins of Cinematic Art</h3>
+                    <p>Since Cro-Magnon humans began depicting icons on cave walls using mineral pigments like iron oxide and black manganese, humanity has passed down stories across diverse media. Whether for recording life, communicating with others, or embodying inspired imagery, the underlying motivation remains the same: an irresistible narrative impulse.</p>
+                    <p>As Roger Rosenblatt argues, all communication is essentially a form of storytelling; sharing narratives is an indispensable act that satisfies the human psychological and social desire to be "heard and understood by others." The most direct answer to the fundamental question, "Why do we make movies?" is that cinema is the ultimate expressive form that marries this ancient narrative impulse with modern technology.</p>
+                    <p>In exploring this proposition, the 2025 epic sci-fi fantasy film Myth of Man, directed by Jamin Winans, offers an unparalleled case study. Winans, who gained a cult following with Ink (2009) and The Frame (2014), spent a staggering ten years alongside his wife and producer, Kiowa Winans, to complete this work.</p>
+                    <p class="quote">Their near-manic dedication—selling their home in 2015 to fund the project and manually constructing over 3,500 VFX shots, props, costumes, and sound designs—completely deviates from the logic of contemporary commercial filmmaking.</p>
+                    <p>The film follows Ella (Laura Rauch), a non-verbal artist who, convinced she has received a message from the Creator, embarks on a whimsical odyssey across the boundary of life and death. This "silent film," devoid of dialogue, depicts profound themes of love, loss, mortality, hope, and faith through visual and auditory means alone. By intersecting film theory, evolutionary psychology, and Jungian depth psychology, this essay dissects the text and background of Myth of Man to reveal the ontological reasons why humanity continues to construct the massive fiction known as cinema.</p>
+                </div>
+                
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <a href="#narrative" class="nav-trigger-card block p-6 bg-slate-800/40 border border-white/10 rounded-2xl shadow-lg hover:bg-slate-700/50 hover:shadow-cyan-500/20 transition-all duration-300 transform hover:-translate-y-1 text-center backdrop-blur-md" data-target="narrative">
+                        <span class="block text-3xl mb-3">🧠</span>
+                        <span class="font-bold text-sky-400 lang-ja tracking-wide">次へ：脳とナラティブ</span>
+                        <span class="font-bold text-sky-400 lang-en hidden tracking-wide">Next: Brain and Narrative</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- SECTION: 脳とナラティブ -->
+            <section id="narrative" class="content-section text-content">
+                <h2 class="lang-ja text-3xl font-bold text-white mb-6 border-b border-white/10 pb-4">脳とナラティブ：心理学的・進化的視点から見る物語の要請</h2>
+                <h2 class="lang-en hidden text-3xl font-bold text-white mb-6 border-b border-white/10 pb-4">Brain and Narrative: Psychological and Evolutionary Perspectives</h2>
+                
+                <div class="text-columns lang-ja">
+                    <h3>コミュニケーションの究極的形態としての物語</h3>
+                    <p>文字言語を持たなかった古代の社会において、物語は文化、道徳、そして生存に直結する技術を世代を超えて伝達するための唯一の手段であった。一部の人類学者は、言語そのものが物語を語るための手段として発生したと考えている。人間の脳は、単なる事実や指示の羅列よりも、ナラティブ（物語）という結合された糸を持つ構造を記憶し、処理するようにハードワイヤリング（生得的に配線）されている。</p>
+                    <p>『Myth of Man』の主人公であるエラは、まさにこの「物語を伝達せずにはいられない」人間の原初的欲求を体現するキャラクターである。彼女はアーティストとして、大衆が見たがる物語だけでなく、大衆が「見る必要がある」と彼女自身が信じる物語を創り出し、共有しようとする。彼女の作品が独り歩きを始めたとき、エラはそれを、自らの世界観を出会うすべての人々と共有せよという「創造主からの召命（calling）」として受け取る。</p>
+                    <p class="quote">エラがどれほど疲弊しようとも、どれほど長い時間がかかろうとも、自分自身のやり方で物語を語り続ける姿は、インディペンデント映画作家としてのジャマンとキオワ・ウィナンスの現実の闘争と完全にパラレルな関係にある。人が映画を造るのは、自己の内奥にある真実を世界に投影し、他者の脳内にそれを共鳴させなければ、精神的な生存が脅かされるからである。</p>
+
+                    <h3>パターン認識と「意味」の構築</h3>
+                    <p>人間の脳の最も注目すべき特徴の一つは、無秩序な情報の中にパターンを認識し、意味を付与する能力である。「赤・狐・風船」という無作為な三つの単語を与えられただけで、脳は直ちにそれらを結びつけ、筋の通った物語を生成しようと試みる。物語が持つ「始まり、中間、終わり」という予測可能な構造は、人間の認知機構にとって極めて魅力的であり、深いエンゲージメントを引き出す。映画やメディアのテクノロジーがどれほど進化しようとも、意味の構築は常に人間の脳内から始まるのであり、物語こそがテクノロジーを飛び越えて経験の核心へと我々を導くのである。</p>
+                    <p>『Myth of Man』は、音声言語による直接的な意味の伝達を放棄することで、この脳のパターン認識機能を極限まで活性化させる。台詞を排した本作は、ASMR（自律感覚絶頂反応）的な環境音と、ウィナンス自身が脚本執筆と並行して3年かけて作曲したサウンドトラックによって、世界を感覚的に提示する。</p>
+                    <p>観客は受動的に物語を消費するのではなく、「パズルを分解し、それぞれのピースを調べ、それらがどのように組み合わさってより大きな全体像（Bigger picture）を形成するかを検証する」という能動的な参加を要求される。映画を造るとは、観客の脳内に眠るパターン認識の欲求を触発し、彼ら自身に「意味」を立ち上げさせるための精巧な認知装置を設計することに他ならない。</p>
+                </div>
+
+                <div class="text-columns lang-en hidden">
+                    <h3>Storytelling as the Ultimate Form of Communication</h3>
+                    <p>In ancient societies lacking written language, stories were the sole means of transmitting culture, morality, and survival skills across generations. Some anthropologists believe language itself evolved as a tool for storytelling. The human brain is hardwired to remember and process structures with connected narrative threads rather than mere lists of facts.</p>
+                    <p>Ella, the protagonist of Myth of Man, embodies this primal human urge to communicate through story. As an artist, she seeks to create and share not just the stories the public wants to see, but the stories she believes they need to see. When her work begins to take on a life of its own, she views it as a "calling" from the Creator to share her worldview with everyone she meets.</p>
+                    <p class="quote">Ella’s struggle to keep telling her story, regardless of exhaustion or time, parallels the real-world struggle of Jamin and Kiowa Winans as independent filmmakers. We make movies because if we do not project our inner truths onto the world and resonate within the minds of others, our spiritual survival is threatened.</p>
+
+                    <h3>Pattern Recognition and the Construction of "Meaning"</h3>
+                    <p>A remarkable feature of the human brain is its ability to recognize patterns in chaotic information and assign meaning. The predictable "beginning, middle, and end" structure of a narrative is highly attractive to human cognition. Regardless of how media technology evolves, the construction of meaning always begins within the brain.</p>
+                    <p>Myth of Man maximizes this pattern-recognition function by abandoning verbal language. Eschewing dialogue, the film presents the world sensorially through ASMR-style ambient sounds and a soundtrack composed by Winans over three years.</p>
+                    <p>The audience is not a passive consumer but an active participant, required to "disassemble the puzzle, examine each piece, and verify how they form the Bigger Picture." To make a movie is to design an elaborate cognitive apparatus that triggers the audience’s desire for pattern recognition, forcing them to give rise to "meaning" themselves.</p>
+                </div>
+            </section>
+
+            <!-- SECTION: 想像上の世界の構築 -->
+            <section id="world" class="content-section text-content">
+                <h2 class="lang-ja text-3xl font-bold text-white mb-6 border-b border-white/10 pb-4">想像上の世界（Imaginary Worlds）の構築と探索的遊戯</h2>
+                <h2 class="lang-en hidden text-3xl font-bold text-white mb-6 border-b border-white/10 pb-4">Building Imaginary Worlds and Exploratory Play</h2>
+                
+                <div class="text-columns lang-ja">
+                    <h3>進化発達心理学とワールドビルディング</h3>
+                    <p>人類はなぜ、現実には存在しない精巧な「想像上の世界」を構築することに莫大なエネルギーを注ぐのか。進化発達心理学の知見によれば、若年個体が環境を探索し、新たな事物を試す「探索的選好（exploratory preferences）」は、生存のための適応的行動である。フィクションにおけるワールドビルディング（世界構築）は、物理的な危険を伴わずに未知の環境を探索し、新たな概念や社会構造を学習するための「安全なシミュレーション空間」を提供する。</p>
+                    <p>『Myth of Man』における世界構築は、この進化的欲求を強烈に刺激する。映画の舞台は、スチームパンクやディーゼルパンクの美学が色濃く反映された、レトロフューチャーな汎ヨーロッパ的都市である。ジュール・ヴェルヌの壮大な冒険譚から抜け出してきたような、あり得ない飛行機械や巨大なカンチレバーが遠くを行進し、すすにまみれた絵画のような都市景観が広がる。</p>
+                    <p>この想像上の世界には、「緑色の光」を肩に宿したサイボーグ的な住人たちが暮らしており、その光は彼らの生命力や健康状態（ヘルス・メーター）を示し、死と共に消滅する。このような独自の物理法則と生態系を持つ世界を緻密に設計することは、単なる視覚的娯楽を超え、観客の脳に新たな「世界の規則」を学習させるという高度な認知的遊戯を提供する。</p>
+
+                    <h3>ヴィクトリア朝の郷愁と機械仕掛けのファンタジー</h3>
+                    <p>ウィナンスが本作の構築において多大なインスピレーションを受けたのは、19世紀のイギリス文学と文化である。チャールズ・ディケンズの小説に登場するような、甘く、時に鼻につくほどの風変わりな（eccentricities）キャラクターたち、そしてヴィクトリア女王が愛好し、アーサー・コナン・ドイルが傾倒したような心霊主義や妖精への執着が、映画全体に「ヴィクトリア朝の郷愁」というヴェールを被せている。</p>
+                </div>
+
+                <div class="text-columns lang-en hidden">
+                    <h3>Evolutionary Developmental Psychology and World-building</h3>
+                    <p>Why does humanity invest immense energy into constructing elaborate "imaginary worlds"? According to evolutionary psychology, "exploratory preferences"—the urge to explore environments and test new things—is an adaptive behavior for survival. World-building in fiction provides a "safe simulation space" to explore unknown environments and learn new concepts without physical danger.</p>
+                    <p>The world-building in Myth of Man intensely stimulates this evolutionary urge. The setting is a retro-futuristic, pan-European city reflecting steampunk and dieselpunk aesthetics. Impossible flying machines and massive cantilevers march in the distance, set against soot-stained, painterly urban landscapes.</p>
+                    <p>The inhabitants, cyborg-like figures, carry a "green light" on their shoulders—a health meter that fades with age and vanishes upon death. Designing a world with such unique physical laws and ecosystems provides a high-level cognitive game that teaches the brain new "rules of the world."</p>
+                </div>
+
+                <div class="custom-table-container lang-ja mt-8">
+                    <table class="custom-table">
+                        <thead>
+                            <tr>
+                                <th>『Myth of Man』における視覚的・物語的表現</th>
+                                <th>心理学的・テーマ的機能</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>レトロフューチャーの美学</strong><br>スチームパンク／ディーゼルパンク的機械、飛行機械、セピア調。</td>
+                                <td>現代の高度情報社会からの意図的な離脱。物理的な手触りを持つ「手作りの世界」への回帰願望の充足。</td>
+                            </tr>
+                            <tr>
+                                <td><strong>生命の可視化システム</strong><br>住人の肩にある緑色の光。老化や病気で薄れ、死と共に消滅する。</td>
+                                <td>デジタル化された健康・生命管理のメタファーであり、観客に実存的な死（mortality）を直感的に認識させる機能。</td>
+                            </tr>
+                            <tr>
+                                <td><strong>創造神話の導入</strong><br>空を横切る彗星と、創造主と交信するための「正しい歌」を集める伝承。</td>
+                                <td>架空の世界に深層的な時間軸と宗教的次元を与え、キャラクターの行動原理に神話的な正当性を付与する。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="custom-table-container lang-en hidden mt-8">
+                    <table class="custom-table">
+                        <thead>
+                            <tr>
+                                <th>Element</th>
+                                <th>Visual/Narrative Expression</th>
+                                <th>Psychological/Thematic Function</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Retro-futuristic Aesthetic</strong></td>
+                                <td>Steampunk machinery, sepia-toned cinematography.</td>
+                                <td>Intentional detachment from high-info society; satisfying the longing for a "handmade world."</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Life Visualization System</strong></td>
+                                <td>Green shoulder lights that vanish upon death.</td>
+                                <td>A metaphor for digitized health management; makes the audience intuitively perceive mortality.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Creation Myth</strong></td>
+                                <td>Legends of comets and "The Right Song" to reach the Creator.</td>
+                                <td>Adds a religious dimension and mythical justification to the characters' actions.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            
+            <section id="conclusion" class="content-section text-content">
+                <h2 class="lang-ja text-3xl font-bold text-white mb-6 border-b border-white/10 pb-4">結論：存在証明としての映画創造</h2>
+                <h2 class="lang-en hidden text-3xl font-bold text-white mb-6 border-b border-white/10 pb-4">Conclusion: Cinema as a Proof of Existence</h2>
+                
+                <div class="lang-ja">
+                    <p class="text-lg md:text-xl text-sky-100 mb-8 font-medium leading-relaxed">
+                        ジャマン・ウィナンス監督の『Myth of Man』を中心とした考察を通じて、「人はなぜ映画を造るのか」という命題には、極めて多層的な理由が重なり合っていることが明らかになった。
+                    </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                        <div class="bg-slate-800/40 border border-white/10 p-6 rounded-2xl backdrop-blur-sm shadow-lg">
+                            <h4 class="text-sky-400 font-bold mb-3 flex items-center text-lg"><span class="text-2xl mr-2 opacity-70">1.</span> 生物学・心理学的な要請</h4>
+                            <p class="text-slate-300 text-sm leading-relaxed mb-0">脳がパターンと意味を渇望し、探索的遊戯を通じて未知の環境に適応しようとする本能が、我々を「架空の世界」の構築とナラティブの共有へと駆り立てる。</p>
+                        </div>
+                        <div class="bg-slate-800/40 border border-white/10 p-6 rounded-2xl backdrop-blur-sm shadow-lg">
+                            <h4 class="text-sky-400 font-bold mb-3 flex items-center text-lg"><span class="text-2xl mr-2 opacity-70">2.</span> 観念（Idea）の勝利の証明</h4>
+                            <p class="text-slate-300 text-sm leading-relaxed mb-0">インディペンデントの極北として10年の歳月と全財産を投じて本作を手作りした行為は、映画が一人の精神に宿った理想主義的なヴィジョンを現実世界に強引に受肉させる魂の闘争であることを示している。</p>
+                        </div>
+                        <div class="bg-slate-800/40 border border-white/10 p-6 rounded-2xl backdrop-blur-sm shadow-lg">
+                            <h4 class="text-sky-400 font-bold mb-3 flex items-center text-lg"><span class="text-2xl mr-2 opacity-70">3.</span> 人間性均質化へのレジスタンス</h4>
+                            <p class="text-slate-300 text-sm leading-relaxed mb-0">監視と抑圧が支配する世界において、人間性を保ち、命がけでアートを描き続けるキャラクターたちの姿は、個人的な芸術を創造することの政治的・実存的意義を浮き彫りにしている。</p>
+                        </div>
+                    </div>
+                    
+                    <p class="quote text-lg mb-8"><strong>そして最後に、映画は現代人が喪失した「大いなる意味」を補完するための新たな神話の生成装置である。</strong><br>時間と空間の連続性を解体し、言葉を超えた知覚の領域に観客を導くことで、映画は我々に「世界の思考」を強いる。</p>
+                    
+                    <p class="text-lg text-slate-200 mt-6 leading-relaxed">
+                        人間が映画を造り続けるのは、この宇宙における自らの孤独と死の運命に立ち向かい、脆くも美しい「人間の神話」を何度でも再構築し、自らがここに確かに存在し、愛し、苦悩したという証を永遠の光の明滅として刻み込むためである。
+                    </p>
+                </div>
+
+                <div class="lang-en hidden">
+                    <p class="text-lg md:text-xl text-sky-100 mb-8 font-medium leading-relaxed">
+                        Through the lens of Myth of Man, we see that "Why we make movies" has multilayered answers:
+                    </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                        <div class="bg-slate-800/40 border border-white/10 p-6 rounded-2xl backdrop-blur-sm shadow-lg">
+                            <h4 class="text-sky-400 font-bold mb-3 flex items-center text-lg"><span class="text-2xl mr-2 opacity-70">1.</span> Biological Necessity</h4>
+                            <p class="text-slate-300 text-sm leading-relaxed mb-0">The brain craves meaning and narrative to adapt to the unknown, driving us to construct "imaginary worlds."</p>
+                        </div>
+                        <div class="bg-slate-800/40 border border-white/10 p-6 rounded-2xl backdrop-blur-sm shadow-lg">
+                            <h4 class="text-sky-400 font-bold mb-3 flex items-center text-lg"><span class="text-2xl mr-2 opacity-70">2.</span> Triumph of the Idea</h4>
+                            <p class="text-slate-300 text-sm leading-relaxed mb-0">It proves that a spiritual vision can be forcibly incarnated into the world, defying the logic of capital through sheer will.</p>
+                        </div>
+                        <div class="bg-slate-800/40 border border-white/10 p-6 rounded-2xl backdrop-blur-sm shadow-lg">
+                            <h4 class="text-sky-400 font-bold mb-3 flex items-center text-lg"><span class="text-2xl mr-2 opacity-70">3.</span> Resistance</h4>
+                            <p class="text-slate-300 text-sm leading-relaxed mb-0">It acts as a defense against the homogenization of humanity by authoritarian systems and surveillance.</p>
+                        </div>
+                    </div>
+
+                    <p class="quote text-lg mb-8"><strong>Finally, cinema is a myth-making apparatus designed to compensate for the "Great Meaning" lost in modernity.</strong></p>
+                    
+                    <p class="text-lg text-slate-200 mt-6 leading-relaxed">
+                        Humanity continues to create cinema to confront its solitude and mortality, reconstructing "fragile myths" to prove that we were here, we loved, and we suffered—leaving a permanent mark in the flickering of eternal light.
+                    </p>
+                </div>
+            </section>
+            
+        </main>
+
+        <footer class="text-slate-500 py-8 text-center mt-auto border-t border-white/5 bg-slate-900/50 backdrop-blur-sm relative z-20" itemscope itemtype="https://schema.org/Person" itemid="#katsuhiro-hayashi">
+            <p>
+                &copy; 2026 
+                <span itemprop="jobTitle">Generative AI Artist</span> 
+                <strong itemprop="name">Katsuhiro Hayashi</strong>. 
+                All rights reserved.
+            </p>
+        </footer>
+    </div>
+
+    <!-- UI Controls -->
+    <button id="controls-toggle-button" aria-label="カスタマイズパネルを開閉">
+        <i class="fas fa-sliders-h"></i>
+    </button>
+    <div id="controls-container">
+        <h2>
+            <span class="lang-ja">環境エフェクト調整</span>
+            <span class="lang-en hidden">Environment Effects</span>
+        </h2>
+        <div class="control-group hidden">
+            <input type="color" id="backgroundColor" value="#030712">
+        </div>
+        <div class="control-group">
+            <label for="backgroundAlpha">
+                <span class="lang-ja">Canvas残像度 (リキッド感):</span><span class="lang-en hidden">Trail Alpha:</span>
+                <span class="value-display" id="backgroundAlphaValue">0.15</span>
+            </label>
+            <input type="range" id="backgroundAlpha" min="0" max="1" step="0.01" value="0.15">
+        </div>
+        <div class="control-group">
+            <label for="color1">
+                <span class="lang-ja">パーティクル色1 (生命の光)</span><span class="lang-en hidden">Particle Color 1 (Life Light)</span>
+            </label>
+            <input type="color" id="color1" value="#38bdf8">
+        </div>
+        <div class="control-group">
+            <label for="color2">
+                <span class="lang-ja">パーティクル色2 (セピア)</span><span class="lang-en hidden">Particle Color 2 (Sepia)</span>
+            </label>
+            <input type="color" id="color2" value="#f97316">
+        </div>
+        <div class="control-group">
+            <label for="colorMode">
+                <span class="lang-ja">カラーモード</span><span class="lang-en hidden">Color Mode</span>
+            </label>
+            <select id="colorMode">
+                <option value="color1">Color 1 Only</option>
+                <option value="color2">Color 2 Only</option>
+                <option value="randomMix" selected>Random Mix</option>
+                <option value="gradient">Gradient (Y-axis)</option>
+            </select>
+        </div>
+        <div class="control-group">
+            <label for="quantity">
+                <span class="lang-ja">パーティクル数:</span><span class="lang-en hidden">Quantity:</span>
+                <span class="value-display" id="quantityValue">150</span>
+            </label>
+            <input type="range" id="quantity" min="10" max="500" step="10" value="150">
+        </div>
+        <div class="control-group">
+            <label for="birdSize">
+                <span class="lang-ja">サイズ:</span><span class="lang-en hidden">Size:</span>
+                <span class="value-display" id="birdSizeValue">2</span>
+            </label>
+            <input type="range" id="birdSize" min="1" max="20" step="0.5" value="2">
+        </div>
+        <div class="control-group">
+            <label for="wingSpan">
+                <span class="lang-ja">翼幅:</span><span class="lang-en hidden">Width:</span>
+                <span class="value-display" id="wingSpanValue">2</span>
+            </label>
+            <input type="range" id="wingSpan" min="1" max="20" step="0.5" value="2">
+        </div>
+        <div class="control-group">
+            <label for="speedLimit">
+                <span class="lang-ja">最大速度:</span><span class="lang-en hidden">Speed:</span>
+                <span class="value-display" id="speedLimitValue">1.5</span>
+            </label>
+            <input type="range" id="speedLimit" min="0.5" max="10" step="0.1" value="1.5">
+        </div>
+    </div>
+
+    <script>
+        // --- 浮遊感・リキッドパララックス (Parallax Effect) ---
+        let scrollY = 0;
+        let targetScrollY = 0;
+        let mouseX = 0;
+        let mouseY = 0;
+        let targetMouseX = 0;
+        let targetMouseY = 0;
+
+        window.addEventListener('scroll', () => { targetScrollY = window.scrollY; });
+        window.addEventListener('mousemove', (e) => {
+            targetMouseX = (e.clientX / window.innerWidth) - 0.5;
+            targetMouseY = (e.clientY / window.innerHeight) - 0.5;
+        });
+
+        function renderParallax() {
+            scrollY += (targetScrollY - scrollY) * 0.08;
+            mouseX += (targetMouseX - mouseX) * 0.05;
+            mouseY += (targetMouseY - mouseY) * 0.05;
+
+            const parallaxBg = document.getElementById('parallax-bg');
+            if (parallaxBg) {
+                const moveY = -(scrollY * 0.15) + (mouseY * 50);
+                const moveX = (mouseX * 50);
+                parallaxBg.style.transform = `translate3d(${moveX}px, ${moveY}px, 0) scale(1.15)`;
+            }
+
+            const canvasBg = document.getElementById('vanta-bg');
+            if (canvasBg) {
+                canvasBg.style.transform = `translate3d(${mouseX * 20}px, ${(mouseY * 20) - (scrollY * 0.05)}px, 0) scale(1.05)`;
+            }
+
+            // ヒーローテキストにもパララックス（スクロール時にゆっくり上へ）
+            const heroContent = document.getElementById('hero-content');
+            if (heroContent) {
+                heroContent.style.transform = `translateY(${scrollY * 0.3}px)`;
+            }
+
+            requestAnimationFrame(renderParallax);
+        }
+        renderParallax();
+
+        // --- ヒーローセクションのスクロールトリガー ---
+        const heroContentBlock = document.getElementById('hero-content');
+        const scrollIndicator = document.getElementById('scroll-indicator');
+        let heroRevealed = false;
+
+        function revealHero() {
+            if (heroRevealed) return;
+            heroRevealed = true;
+            heroContentBlock.classList.add('is-revealed');
+            scrollIndicator.classList.add('opacity-0');
+        }
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 5) revealHero();
+        }, { passive: true });
+        
+        // ホイール・タッチ操作でも発火
+        window.addEventListener('wheel', revealHero, { once: true });
+        window.addEventListener('touchmove', revealHero, { once: true });
+
+        // ページロード時にすでにスクロールされていれば即時表示
+        if (window.scrollY > 5) revealHero();
+
+        // --- Vector and Boid Classes ---
+        class Vector {
+            constructor(x = 0, y = 0) { this.x = x; this.y = y; }
+            add(v) { this.x += v.x; this.y += v.y; return this; }
+            sub(v) { this.x -= v.x; this.y -= v.y; return this; }
+            mult(s) { this.x *= s; this.y *= s; return this; }
+            div(s) { if (s !== 0) { this.x /= s; this.y /= s; } return this; }
+            mag() { return Math.sqrt(this.x * this.x + this.y * this.y); }
+            normalize() { const m = this.mag(); if (m > 0) { this.div(m); } return this; }
+            limit(max) { if (this.mag() > max) { this.normalize().mult(max); } return this; }
+            static sub(v1, v2) { return new Vector(v1.x - v2.x, v1.y - v2.y); }
+            static dist(v1, v2) { const dx = v1.x - v2.x; const dy = v1.y - v2.y; return Math.sqrt(dx * dx + dy * dy); }
+        }
+
+        class Boid {
+            constructor(x, y, settings) {
+                this.settings = settings;
+                this.position = new Vector(x, y);
+                this.velocity = new Vector(Math.random() * 2 - 1, Math.random() * 2 - 1);
+                this.velocity.normalize().mult(Math.random() * (this.settings.speedLimit / 2) + (this.settings.speedLimit / 2));
+                this.acceleration = new Vector();
+                this.maxForce = 0.2;
+                this.assignColor();
+            }
+            
+            assignColor() {
+                switch (this.settings.colorMode) {
+                    case 'color1': this.color = this.settings.color1; break;
+                    case 'color2': this.color = this.settings.color2; break;
+                    case 'randomMix': this.color = Math.random() < 0.5 ? this.settings.color1 : this.settings.color2; break;
+                    case 'gradient':
+                        const ratio = this.position.y / window.innerHeight;
+                        this.color = this.interpolateColor(this.settings.color1, this.settings.color2, ratio);
+                        break;
+                    default: this.color = this.settings.color1;
+                }
+            }
+
+            interpolateColor(color1, color2, factor) {
+                const c1 = this.hexToRgb(color1); const c2 = this.hexToRgb(color2);
+                if (!c1 || !c2) return '#000000';
+                const r = Math.round(c1.r + factor * (c2.r - c1.r));
+                const g = Math.round(c1.g + factor * (c2.g - c1.g));
+                const b = Math.round(c1.b + factor * (c2.b - c1.b));
+                return `rgb(${r},${g},${b})`;
+            }
+
+            hexToRgb(hex) {
+                const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+                return result ? { r: parseInt(result[1], 16), g: parseInt(result[2], 16), b: parseInt(result[3], 16) } : null;
+            }
+
+            edges() {
+                if (this.position.x > window.innerWidth) this.position.x = 0;
+                else if (this.position.x < 0) this.position.x = window.innerWidth;
+                if (this.position.y > window.innerHeight) this.position.y = 0;
+                else if (this.position.y < 0) this.position.y = window.innerHeight;
+            }
+
+            applyForce(force) { this.acceleration.add(force); }
+
+            flock(boids) {
+                let separationForce = new Vector(); let alignmentForce = new Vector(); let cohesionForce = new Vector();
+                let totalSeparation = 0; let totalAlignment = 0; let totalCohesion = 0;
+                const separationRadius = this.settings.separation;
+                const perceptionRadius = 50;
+
+                for (let other of boids) {
+                    if (other === this) continue;
+                    let d = Vector.dist(this.position, other.position);
+                    if (d > 0 && d < separationRadius) {
+                        let diff = Vector.sub(this.position, other.position);
+                        diff.normalize(); diff.div(d); separationForce.add(diff); totalSeparation++;
+                    }
+                    if (d > 0 && d < perceptionRadius) {
+                        alignmentForce.add(other.velocity); totalAlignment++;
+                        cohesionForce.add(other.position); totalCohesion++;
+                    }
+                }
+
+                if (totalSeparation > 0) {
+                    separationForce.div(totalSeparation); separationForce.normalize();
+                    separationForce.mult(this.settings.speedLimit); separationForce.sub(this.velocity);
+                    separationForce.limit(this.maxForce); separationForce.mult(this.settings.separationFactor);
+                }
+                if (totalAlignment > 0) {
+                    alignmentForce.div(totalAlignment); alignmentForce.normalize();
+                    alignmentForce.mult(this.settings.speedLimit); alignmentForce.sub(this.velocity);
+                    alignmentForce.limit(this.maxForce); alignmentForce.mult(this.settings.alignmentFactor);
+                }
+                if (totalCohesion > 0) {
+                    cohesionForce.div(totalCohesion); cohesionForce.sub(this.position); cohesionForce.normalize();
+                    cohesionForce.mult(this.settings.speedLimit); cohesionForce.sub(this.velocity);
+                    cohesionForce.limit(this.maxForce); cohesionForce.mult(this.settings.cohesionFactor);
+                }
+                this.applyForce(separationForce); this.applyForce(alignmentForce); this.applyForce(cohesionForce);
+            }
+
+            update() {
+                this.velocity.add(this.acceleration);
+                this.velocity.limit(this.settings.speedLimit);
+                this.position.add(this.velocity);
+                this.acceleration.mult(0);
+                this.edges();
+                if (this.settings.colorMode === 'gradient') { this.assignColor(); }
+            }
+
+            draw(ctx) {
+                ctx.fillStyle = this.color; ctx.strokeStyle = this.color;
+                const angle = Math.atan2(this.velocity.y, this.velocity.x);
+                ctx.save(); ctx.translate(this.position.x, this.position.y); ctx.rotate(angle);
+                ctx.beginPath();
+                ctx.moveTo(this.settings.birdSize, 0);
+                ctx.lineTo(-this.settings.birdSize / 2, -this.settings.wingSpan / 2);
+                ctx.lineTo(-this.settings.birdSize / 2, this.settings.wingSpan / 2);
+                ctx.closePath(); ctx.fill();
+                ctx.restore();
+            }
+        }
+
+        // --- Main Animation Script ---
+        const canvas = document.getElementById('vanta-bg');
+        const ctx = canvas.getContext('2d');
+        let flock = [];
+        
+        const isMobile = window.innerWidth < 768;
+
+        const settings = {
+            backgroundColor: '#030712', backgroundAlpha: 0.15, color1: '#38bdf8', color2: '#f97316',
+            colorMode: 'randomMix', quantity: isMobile ? 80 : 150, birdSize: 2, wingSpan: 2, speedLimit: 1.5,
+            separation: 30, separationFactor: 1.5, alignmentFactor: 1.0, cohesionFactor: 1.0,
+        };
+
+        function setupControls() {
+            const controls = [
+                { id: 'backgroundColor', prop: 'backgroundColor', type: 'color' },
+                { id: 'backgroundAlpha', prop: 'backgroundAlpha', type: 'range', valueDisplay: 'backgroundAlphaValue' },
+                { id: 'color1', prop: 'color1', type: 'color' }, { id: 'color2', prop: 'color2', type: 'color' },
+                { id: 'colorMode', prop: 'colorMode', type: 'select' },
+                { id: 'quantity', prop: 'quantity', type: 'range', valueDisplay: 'quantityValue', callback: resetFlock },
+                { id: 'birdSize', prop: 'birdSize', type: 'range', valueDisplay: 'birdSizeValue' },
+                { id: 'wingSpan', prop: 'wingSpan', type: 'range', valueDisplay: 'wingSpanValue' },
+                { id: 'speedLimit', prop: 'speedLimit', type: 'range', valueDisplay: 'speedLimitValue' },
+            ];
+            controls.forEach(control => {
+                const el = document.getElementById(control.id); if (!el) return;
+                if (control.type === 'range' || control.type === 'select' || control.type === 'color') { el.value = settings[control.prop]; }
+                if (control.valueDisplay) { const dEl = document.getElementById(control.valueDisplay); if (dEl) dEl.textContent = el.value; }
+                el.addEventListener(control.type === 'color' || control.type === 'select' ? 'change' : 'input', (e) => {
+                    settings[control.prop] = (control.type === 'range') ? parseFloat(e.target.value) : e.target.value;
+                    if (control.valueDisplay) { document.getElementById(control.valueDisplay).textContent = e.target.value; }
+                    if (control.callback) { control.callback(); }
+                    if (['color1', 'color2', 'colorMode'].includes(control.prop)) { flock.forEach(boid => boid.assignColor()); }
+                });
+            });
+        }
+        
+        function hexToRgba(hex, alpha) {
+            const r = parseInt(hex.slice(1, 3), 16), g = parseInt(hex.slice(3, 5), 16), b = parseInt(hex.slice(5, 7), 16);
+            return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+        }
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth; canvas.height = window.innerHeight;
+            if (flock.length > 0 && settings.colorMode === 'gradient') { flock.forEach(boid => boid.assignColor());}
+        }
+
+        function resetFlock() {
+            flock = [];
+            for (let i = 0; i < settings.quantity; i++) {
+                flock.push(new Boid(Math.random() * canvas.width, Math.random() * canvas.height, settings));
+            }
+        }
+
+        function animate() {
+            ctx.fillStyle = hexToRgba(settings.backgroundColor, settings.backgroundAlpha);
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            flock.forEach(boid => { boid.flock(flock); boid.update(); boid.draw(ctx); });
+            requestAnimationFrame(animate);
+        }
+
+        // --- Navigation and Language Script ---
+        document.addEventListener('DOMContentLoaded', function () {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const contentSections = document.querySelectorAll('.content-section');
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navTriggerCards = document.querySelectorAll('.nav-trigger-card');
+
+            // Language Toggle
+            const btnJa = document.getElementById('btn-ja');
+            const btnEn = document.getElementById('btn-en');
+            const elsJa = document.querySelectorAll('.lang-ja');
+            const elsEn = document.querySelectorAll('.lang-en');
+
+            function setLanguage(lang) {
+                if (lang === 'en') {
+                    elsJa.forEach(el => el.classList.add('hidden'));
+                    elsEn.forEach(el => el.classList.remove('hidden'));
+                    btnEn.classList.add('bg-sky-600', 'text-white', 'font-bold');
+                    btnEn.classList.remove('text-slate-300', 'font-medium', 'hover:text-white');
+                    btnJa.classList.remove('bg-sky-600', 'text-white', 'font-bold');
+                    btnJa.classList.add('text-slate-300', 'font-medium', 'hover:text-white');
+                } else {
+                    elsEn.forEach(el => el.classList.add('hidden'));
+                    elsJa.forEach(el => el.classList.remove('hidden'));
+                    btnJa.classList.add('bg-sky-600', 'text-white', 'font-bold');
+                    btnJa.classList.remove('text-slate-300', 'font-medium', 'hover:text-white');
+                    btnEn.classList.remove('bg-sky-600', 'text-white', 'font-bold');
+                    btnEn.classList.add('text-slate-300', 'font-medium', 'hover:text-white');
+                }
+            }
+
+            btnJa.addEventListener('click', () => setLanguage('ja'));
+            btnEn.addEventListener('click', () => setLanguage('en'));
+
+            // Intersection Observer
+            const observerOptions = {
+                root: null,
+                rootMargin: '-20% 0px -60% 0px',
+                threshold: 0
+            };
+
+            const sectionObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        const targetId = entry.target.id;
+                        navLinks.forEach(link => {
+                            link.classList.toggle('active-nav', link.getAttribute('href') === `#${targetId}`);
+                            link.classList.toggle('inactive-nav', link.getAttribute('href') !== `#${targetId}`);
+                        });
+                    }
+                });
+            }, observerOptions);
+
+            contentSections.forEach(section => {
+                sectionObserver.observe(section);
+            });
+
+            // Smooth Scroll
+            function handleNavLinkClick(event) {
+                event.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                if (targetSection) {
+                    const headerHeight = document.querySelector('header').offsetHeight;
+                    const top = targetSection.getBoundingClientRect().top + window.scrollY - headerHeight - 20;
+                    window.scrollTo({ top, behavior: 'smooth' });
+                }
+                if (mobileMenu.classList.contains('block')) {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenu.classList.remove('block');
+                }
+            }
+
+            navLinks.forEach(link => link.addEventListener('click', handleNavLinkClick));
+           
+            navTriggerCards.forEach(card => {
+                card.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    const targetId = this.dataset.target;
+                    const targetSection = document.getElementById(targetId);
+                    if (targetSection) {
+                        const headerHeight = document.querySelector('header').offsetHeight;
+                        const top = targetSection.getBoundingClientRect().top + window.scrollY - headerHeight - 20;
+                        window.scrollTo({ top, behavior: 'smooth' });
+                    }
+                });
+            });
+
+            if (mobileMenuButton) {
+                mobileMenuButton.addEventListener('click', function () {
+                    mobileMenu.classList.toggle('hidden');
+                    mobileMenu.classList.toggle('block');
+                });
+            }
+            
+            // Controls Panel
+            const controlsToggleButton = document.getElementById('controls-toggle-button');
+            const controlsContainer = document.getElementById('controls-container');
+            if(controlsToggleButton && controlsContainer){
+                controlsToggleButton.addEventListener('click', () => {
+                    controlsContainer.classList.toggle('open');
+                    const icon = controlsToggleButton.querySelector('i');
+                    if (controlsContainer.classList.contains('open')) {
+                        icon.classList.remove('fa-sliders-h');
+                        icon.classList.add('fa-times');
+                    } else {
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-sliders-h');
+                    }
+                });
+            }
+            
+            // Start Canvas
+            window.addEventListener('resize', resizeCanvas);
+            resizeCanvas(); 
+            setupControls();
+            resetFlock();   
+            animate();      
+        });
+    </script>
+</body>
+</html>
